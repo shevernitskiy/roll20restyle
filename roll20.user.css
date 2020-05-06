@@ -1,0 +1,697 @@
+/* ==UserStyle==
+@name         Roll20 restyle
+@namespace    github.com/shevernitskiy/roll20restyle
+@homepageURL  https://github.com/shevernitskiy/roll20restyle
+@updateURL    https://raw.githubusercontent.com/hevernitskiy/roll20restyle/master/roll20.user.css
+@version      1.0.0
+@author       shevernitskiy
+@license      MIT
+==/UserStyle== */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kurale&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@-moz-document domain("roll20.net") {
+    ul.nav.nav-tabs {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    span#ui-id-8 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .charsheet .sheet-licensecontainer .sheet-container.sheet-pc .sheet-header .sheet-header-info {
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page > div.sheet-header::after {
+        right: -25px;
+        margin-top: 5px;
+    }
+
+    input[name="attr_character_name"] {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 24px !important;
+        margin-bottom: -5px;
+    }
+
+    input[name="attr_class_display"],
+    input[name="attr_background"],
+    input[name="attr_race_display"],
+    input[name="attr_alignment"],
+    input[name="attr_experience"],
+    input[name="attr_age"],
+    input[name="attr_size"],
+    input[name="attr_height"],
+    input[name="attr_weight"],
+    input[name="attr_eyes"],
+    input[name="attr_skin"],
+    input[name="attr_hair"] {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+    }
+
+    div.sheet-label,
+    span.sheet-label,
+    button[name="roll_initiative"],
+    button[name="roll_hit_dice"],
+    button[name="roll_death_save"],
+    select[name="attr_hitdieroll"] {
+        font-family: 'PT Sans', sans-serif;
+    }
+    span.sheet-attr,
+    span.sheet-finalattr,
+    span[name="attr_pb"],
+    input[name="attr_hit_dice"],
+    input[name="attr_hp"],
+    input[name="attr_hp_temp"],
+    input[name="attr_ac"],
+    span[name="attr_initiative_bonus"],
+    input[name="attr_speed"],
+    input[name="attr_weighttotal"],
+    span[name="attr_passive_wisdom"] {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: black;
+    }
+    input[name="attr_hp"],
+    input[name="attr_hp_temp"] {
+        margin-top: 5px;
+    }
+    input[name="attr_hp_max"],
+    input[name="attr_hit_dice_max"],
+    input[name="attr_other_resource"],
+    input[name="attr_other_resource_max"],
+    input[name="attr_resource_left"],
+    input[name="attr_resource_left_max"],
+    input[name="attr_resource_right"],
+    input[name="attr_resource_right_max"],
+    input[name="attr_class_resource"],
+    input[name="attr_class_resource_max"] {
+        font-family: 'Montserrat', sans-serif;
+    }
+    span[data-i18n="hp-current-u"] {
+        margin-bottom: 4px;
+    }
+    input[name="attr_class_resource_name"],
+    input[name="attr_resource_left_name"],
+    input[name="attr_resource_right_name"],
+    input[name="attr_other_resource_name"] {
+        font-family: 'PT Sans', sans-serif;
+        margin-top: -4px;
+        font-size: 9px !important;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container .sheet-attr {
+        font-size: 30px;
+    }
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-init span,
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-speed input {
+        font-size: 26px;
+    }
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container button {
+        font-family: 'PT Sans', sans-serif;
+    }
+    input[name="attr_ac"] {
+        font-size: 26px !important;
+        margin-bottom: -7px;
+    }
+    input[name="attr_speed"] {
+        margin-top: 10px !important;
+    }
+    button[name="roll_initiative"],
+    span[data-i18n="speed-u"] {
+        bottom: 10px !important;
+    }
+    span[data-i18n="prof-bonus-u"],
+    span[data-i18n="inspiration-u"],
+    span[data-i18n="saving-throws-u"],
+    span[data-i18n="skills-u"],
+    span[data-i18n="equipment-u"],
+    span[data-i18n="atk-spellcasting-u"],
+    span[data-i18n="feats-traits-u"],
+    span[data-i18n="other-prof-langs-u"] {
+        font-family: 'Ubuntu';
+        font-size: 11px !important;
+    }
+    input[name="attr_hitdie_final"],
+    input[name="attr_hitdieroll"],
+    select[name="attr_hitdieroll"],
+    button[name="roll_hit_dice"],
+    button[name="roll_death_save"] {
+        margin-bottom: 6px !important;
+    }
+    span[data-i18n="failures-u"],
+    span[data-i18n="successes-u"] {
+        margin-right: 5px;
+    }
+    .charsheet .sheet-hdice-dsaves-container .sheet-row-container {
+        margin-right: 10px;
+    }
+    .charsheet .sheet-col1 .sheet-saving-throw > span,
+    .charsheet .sheet-col1 .sheet-skill > span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-left: -3px;
+        margin-right: -5px;
+    }
+    .charsheet .sheet-saving-throw input[type=checkbox],
+    .charsheet .sheet-skill input[type=checkbox] {
+        margin-left: -3px;
+    }
+    .charsheet .sheet-saving-throw button[type=roll],
+    .charsheet .sheet-skill button[type=roll] {
+        width: calc(100% - 53px);
+        font-family: 'PT Sans', sans-serif;
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+
+    .charsheet .sheet-advantagetoggle input.sheet-toggle-left,
+    .charsheet .sheet-advantagetoggle input.sheet-toggle-left + span {
+        font-family: 'Ubuntu', sans-serif;
+        width: 110px;
+        right: 327px;
+        background: #eaffea;
+    }
+    .charsheet .sheet-advantagetoggle input.sheet-toggle-center,
+    .charsheet .sheet-advantagetoggle input.sheet-toggle-center + span {
+        width: 110px;
+        right: 213px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .charsheet .sheet-advantagetoggle input.sheet-toggle-right,
+    .charsheet .sheet-advantagetoggle input.sheet-toggle-right + span {
+        font-family: 'Ubuntu', sans-serif;
+        right: 100px;
+        background: #eed4d4;
+    }
+
+    .charsheet input[type=radio].sheet-tab-button.sheet-spells,
+    .charsheet input[type=radio].sheet-tab-button.sheet-spells + span {
+        width: 70px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .charsheet input[type=radio].sheet-tab-button.sheet-bio,
+    .charsheet input[type=radio].sheet-tab-button.sheet-bio + span {
+        width: 70px;
+        right: 93px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .charsheet input[type=radio].sheet-tab-button.sheet-core,
+    .charsheet input[type=radio].sheet-tab-button.sheet-core + span {
+        width: 70px;
+        right: 167px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .charsheet .sheet-advantagetoggle input[type=radio]:checked + span,
+    .charsheet input[type=radio].sheet-tab-button:checked + span {
+        border: 2px solid #8a4c4c;
+        margin-top: -1px;
+    }
+
+
+    .charsheet .sheet-attacks .sheet-display input,
+    .charsheet .sheet-tool .sheet-display input,
+    .charsheet .sheet-equipment .sheet-item input,
+    .charsheet .sheet-attacks .sheet-display span,
+    .charsheet .sheet-tool .sheet-display span,
+    .charsheet .sheet-equipment .sheet-item span,
+    .charsheet .sheet-proficiencies .sheet-display span {
+        font-family: 'PT Sans', sans-serif;
+    }
+    .charsheet .sheet-item .sheet-name {
+        font-size: 10px !important;
+    }
+    .charsheet .sheet-globalattack input[type=checkbox] {
+        margin-top: 5px;
+    }
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-pibf .sheet-display {
+        font-family: 'PT Sans', sans-serif;
+    }
+    span.sheet-title {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+    div.sheet-trait span.sheet-title {
+        font-family: 'Kurale', sans-serif !important;
+        font-size: 20px !important;
+    }
+    div.sheet-trait span.sheet-desc {
+        font-family: 'Nunito', sans-serif;
+    }
+    div.sheet-trait span.sheet-subheader {
+        margin-top: 0px !important;
+        ;
+    }
+    div.sheet-trait div.sheet-display {
+        padding: 1px 10px 1px 10px !important;
+    }
+
+
+    span[data-i18n="tool-u"],
+    span[data-i18n="type-u"],
+    span[data-i18n="proficency-u"],
+    span[data-i18n="name-u"] {
+        display: block;
+        text-align: center !important;
+    }
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-coin {
+        font-family: 'Montserrat', sans-serif;
+    }
+    input[name="attr_cp"],
+    input[name="attr_sp"],
+    input[name="attr_ep"],
+    input[name="attr_gp"],
+    input[name="attr_pp"] {
+        margin-top: 2px;
+        text-align: center;
+    }
+
+    /*======================= BIO INFO =======================*/
+    div.bioinfo div.span12,
+    div.bioinfo p,
+    div.bioinfo h4,
+    div.bioinfo h3,
+    div.bioinfo h2 {
+        font-family: 'Kurale', sans-serif !important;
+    }
+    div.bioinfo h3 {
+        font-size: 22px;
+    }
+    div.bioinfo p {
+        font-size: 14px;
+    }
+
+    /*=============================================================================*/
+    .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-bio .sheet-textbox {
+        font-family: 'PT Sans', sans-serif;
+    }
+
+
+    /*=============================================================================*/
+    div.sheet-skill > input[type=checkbox],
+    div.sheet-global-mod > input[type=checkbox],
+    div.sheet-saving-throw > input[type=checkbox] {
+        position: relative;
+        cursor: pointer;
+    }
+    div.sheet-skill > input[type=checkbox]:before,
+    div.sheet-global-mod > input[type=checkbox]:before,
+    div.sheet-saving-throw > input[type=checkbox]:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: -3px;
+        left: 0;
+        background-color: #e9e9e9;
+    }
+    div.sheet-skill > input[type=checkbox]:checked:before,
+    div.sheet-global-mod > input[type=checkbox]:checked:before,
+    div.sheet-saving-throw > input[type=checkbox]:checked:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: -3px;
+        left: 0;
+        background-color: #65d71f;
+    }
+    div.sheet-skill > input[type=checkbox]:checked:after,
+    div.sheet-global-mod > input[type=checkbox]:checked:after,
+    div.sheet-saving-throw > input[type=checkbox]:checked:after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 10px;
+        border: solid #1b2210;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: -3px;
+        left: 4px;
+    }
+
+    /*=============================================================================*/
+    .player .playername {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*=================================== CHAT ==========================================*/
+    div.sheet-sublabel {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    div.message span.by {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+    div.message span.tstamp {
+        font-family: 'Nunito', sans-serif;
+    }
+
+    span.inlinerollresult,
+    div.rolled,
+    div.didroll,
+    div.backing {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px !important;
+    }
+    div.formula {
+        font-family: 'PT Sans', sans-serif;
+    }
+    div.sheet-rolltemplate-traits > div.sheet-row.sheet-header > span,
+    div.sheet-rolltemplate-spell > div.sheet-container > div.sheet-title.sheet-row > span {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #rightsidebar {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .sheet-rolltemplate-dmg,
+    .sheet-rolltemplate-atk,
+    .sheet-rolltemplate-simple,
+    .sheet-rolltemplate-skill,
+    .sheet-rolltemplate-atkdmg {
+        width: 218px;
+    }
+
+    span[data-i18n="atk-spellcasting-u"]:before {
+        content: "⚔ ";
+    }
+
+    div.sheet-rolltemplate-atk span.inlinerollresult:before {
+        content: "⚔ ";
+    }
+
+    div.sheet-rolltemplate-simple span.inlinerollresult:before {
+        content: "⚡ ";
+    }
+
+    div.sheet-rolltemplate-dmg span.inlinerollresult:before {
+        content: "💥 ";
+    }
+
+    .sheet-rolltemplate-atkdmg .sheet-damagetemplate .sheet-sublabel,
+    .sheet-rolltemplate-dmg .sheet-damagetemplate .sheet-sublabel,
+    .sheet-rolltemplate-atkdmg .sheet-desc .sheet-sublabel,
+    .sheet-rolltemplate-dmg .sheet-desc .sheet-sublabel {
+        margin-top: 0px;
+    }
+
+    div.message span.by {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    div.sheet-rolltemplate-traits {
+        border: 10px solid #5b3e17;
+        border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+        background-image: url("https://s3.amazonaws.com/files.d20.io/images/105716505/oymO0pnVyLCv-tQDw2vddA/med.png");
+        filter: sepia(40%);
+    }
+
+    .textchatcontainer .message .spacer {
+        background-image: url("https://s3.amazonaws.com/files.d20.io/images/105716694/59KW_4mBR3y_Iz45sQw2-g/med.png");
+        height: 2px;
+        border: 1px solid #9b7246;
+        border-radius: 2px;
+        margin-right: -5px;
+    }
+
+    div.sheet-rolltemplate-traits span.sheet-desc {
+        font-family: 'Nunito', sans-serif;
+        line-height: 10px;
+        font-size: 13px;
+    }
+
+    div.sheet-rolltemplate-traits div.sheet-header span {
+        font-family: 'Kurale', sans-serif !important;
+        font-size: 22px;
+    }
+    div.sheet-rolltemplate-traits div.sheet-header {
+        margin-bottom: 5px;
+    }
+
+    .sheet-rolltemplate-simple div.sheet-container,
+    .sheet-rolltemplate-skill div.sheet-container,
+    .sheet-rolltemplate-atk div.sheet-container,
+    .sheet-rolltemplate-atkdmg div.sheet-container.sheet-atk,
+    .sheet-rolltemplate-dmg div.sheet-atk,
+    .sheet-rolltemplate-dmg div.sheet-container,
+    .sheet-rolltemplate-atkdmg div.sheet-container.sheet-damagetemplate,
+    .sheet-rolltemplate-atk div.sheet-desc,
+    .sheet-rolltemplate-atkdmg div.sheet-desc,
+    .sheet-rolltemplate-dmg div.sheet-desc,
+    .sheet-rolltemplate-desc div.sheet-desc {
+        background: url('https://s3.amazonaws.com/cashed-games/explorergame/_assets/inventory_dialog_box.png') top left;
+        background-size: 100% 100%;
+    }
+    .sheet-rolltemplate-simple .sheet-container,
+    .sheet-rolltemplate-skill .sheet-container {
+        border-radius: 0px;
+    }
+
+    .sheet-rolltemplate-atk div.sheet-container,
+    .sheet-rolltemplate-atkdmg div.sheet-container.sheet-atk,
+    .sheet-rolltemplate-dmg div.sheet-atk {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .sheet-rolltemplate-dmg .sheet-container,
+    .sheet-rolltemplate-atkdmg .sheet-container.sheet-damagetemplate {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .sheet-rolltemplate-atkdmg .sheet-damagetemplate .sheet-sublabel,
+    .sheet-rolltemplate-dmg .sheet-damagetemplate .sheet-sublabel,
+    .sheet-rolltemplate-atkdmg .sheet-desc .sheet-sublabel,
+    .sheet-rolltemplate-dmg .sheet-desc .sheet-sublabel,
+    div.message div.sheet-label {
+        font-family: 'Nunito', sans-serif;
+        color: #313131;
+        font-weight: 700;
+    }
+    .sheet-rolltemplate-simple .sheet-grey,
+    .sheet-rolltemplate-simple .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-simple .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-simple .sheet-grey .inlinerollresult.importantroll,
+    .sheet-rolltemplate-simple .sheet-label span span,
+    .sheet-rolltemplate-skill .sheet-grey,
+    .sheet-rolltemplate-skill .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-skill .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-skill .sheet-grey .inlinerollresult.importantroll,
+    .sheet-rolltemplate-skill .sheet-label span span,
+    .sheet-rolltemplate-atk .sheet-label span span,
+    .sheet-rolltemplate-atk .sheet-grey,
+    .sheet-rolltemplate-atk .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-atk .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-atk .sheet-grey .inlinerollresult.importantroll,
+    .sheet-rolltemplate-atkdmg .sheet-label span span,
+    .sheet-rolltemplate-atkdmg .sheet-grey,
+    .sheet-rolltemplate-atkdmg .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-atkdmg .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-atkdmg .sheet-grey .inlinerollresult.importantroll,
+    .sheet-rolltemplate-dmg .sheet-label span span,
+    .sheet-rolltemplate-dmg .sheet-grey,
+    .sheet-rolltemplate-dmg .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-dmg .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-dmg .sheet-grey .inlinerollresult.importantroll,
+    .sheet-rolltemplate-npc .sheet-grey,
+    .sheet-rolltemplate-npc .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-npc .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-npc .sheet-grey .inlinerollresult.importantroll,
+    .sheet-rolltemplate-npcaction .sheet-grey,
+    .sheet-rolltemplate-npcaction .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-npcaction .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-npcaction .sheet-grey .inlinerollresult.importantroll,
+    .sheet-rolltemplate-npcatk .sheet-grey,
+    .sheet-rolltemplate-npcatk .sheet-grey .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-npcatk .sheet-grey .inlinerollresult.fullfail,
+    .sheet-rolltemplate-npcatk .sheet-grey .inlinerollresult.importantroll {
+        color: #4646468c;
+        font-weight: 700;
+    }
+    .sheet-rolltemplate-simple .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-skill .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-atk .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-atkdmg .inlinerollresult.fullcrit,
+    .sheet-rolltemplate-dmg .inlinerollresult.fullcrit {
+        color: #39bd09 !important;
+        text-shadow: 0px 1px 1px #045110;
+    }
+    .sheet-rolltemplate-simple .inlinerollresult.fullfail,
+    .sheet-rolltemplate-skill .inlinerollresult.fullfail,
+    .sheet-rolltemplate-atk .inlinerollresult.fullfail,
+    .sheet-rolltemplate-atkdmg .inlinerollresult.fullfail,
+    .sheet-rolltemplate-dmg .inlinerollresult.fullfail {
+        color: #ea1515 !important;
+        text-shadow: 0px 1px 1px #400605;
+    }
+
+    .textchatcontainer .message,
+    .textchatcontainer .rollresult.quantumRoll {
+        background-image: url("https://s3.amazonaws.com/files.d20.io/images/105716505/oymO0pnVyLCv-tQDw2vddA/med.png");
+        background-size: cover
+    }
+
+    .sheet-rolltemplate-simple .sheet-advspacer,
+    .sheet-rolltemplate-atk .sheet-advspacer,
+    .sheet-rolltemplate-atkdmg .sheet-advspacer,
+    .sheet-rolltemplate-dmg .sheet-advspacer {
+        border: 1px solid #754d0a;
+    }
+    .sheet-rolltemplate-atk div.sheet-advspacer,
+    .sheet-rolltemplate-dmg div.sheet-advspacer,
+    .sheet-rolltemplate-atkdmg div.sheet-advspacer {
+        margin-top: 2px;
+    }
+    .sheet-rolltemplate-traits .sheet-subheader {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color: #5e5e5e;
+    }
+
+    div.message.system {
+        padding-left: 10px;
+        background-color: #D4F5D3 !important;
+    }
+    div.userscript-commandintro p strong {
+        font-family: 'Kurale', sans-serif !important;
+        font-size: 20px;
+        text-align: center;
+    }
+    div.userscript-commandintro p {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+
+    div#textchat-input {
+        background-image: url("https://s3.amazonaws.com/files.d20.io/images/105716505/oymO0pnVyLCv-tQDw2vddA/med.png");
+        background-size: cover;
+        border: 1px solid #9b7246;
+        border-radius: 2px;
+        margin: 0px;
+    }
+
+    .textchatcontainer .avatar {
+        left: 2px;
+        top: 5px;
+    }
+    .textchatcontainer .avatar img {
+        border-radius: 15px;
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    div#rightsidebar ul.tabmenu li[aria-labelledby="ui-id-1"] {
+        margin-left: 10px;
+    }
+    div#rightsidebar ul.tabmenu li {
+        margin-bottom: 2px;
+    }
+    div#rightsidebar ul.tabmenu a.ui-tabs-anchor {
+        display: block;
+        font-size: 0;
+        width: 25px;
+        margin-bottom: 2px;
+    }
+
+    div#rightsidebar ul.tabmenu a#ui-id-1 {
+        background: url('https://icon-icons.com/icons2/1603/PNG/32/message-chat-bubble-1_108543.png') no-repeat center;
+    }
+    div#rightsidebar ul.tabmenu a#ui-id-2 {
+        background: url('https://icon-icons.com/icons2/1485/PNG/32/checklist_102320.png') no-repeat center;
+    }
+    div#rightsidebar ul.tabmenu a#ui-id-3 {
+        background: url('https://icon-icons.com/icons2/317/PNG/32/book-bookmark-icon_34486.png') no-repeat center;
+    }
+    div#rightsidebar ul.tabmenu a#ui-id-4 {
+        background: url('https://icon-icons.com/icons2/1754/PNG/32/iconfinder-musicmelodysoundaudio01-4105530_113869.png') no-repeat center;
+    }
+    div#rightsidebar ul.tabmenu a#ui-id-5 {
+        background: url('https://icon-icons.com/icons2/806/PNG/32/archive-3_icon-icons.com_65954.png') no-repeat center;
+    }
+    div#rightsidebar ul.tabmenu a#ui-id-6 {
+        background: url('https://icon-icons.com/icons2/1494/PNG/32/tools2_102885.png') no-repeat center;
+    }
+
+    div#rightsidebar ul.tabmenu {
+        background-image: url("https://s3.amazonaws.com/files.d20.io/images/105716505/oymO0pnVyLCv-tQDw2vddA/med.png");
+        background-size: cover;
+        border: 1px solid #9b7246;
+        top: 0px;
+    }
+
+    .ui-tabs .ui-tabs-nav li a:hover {
+        border-bottom: 0px;
+    }
+
+    #textchat-input textarea {
+        border-radius: 5px;
+        background: #fff9f6;
+        border: 0;
+        box-shadow: inset 0 0 3px #281d06;
+        font-family: 'Ubuntu', sans-serif;
+        height: 60px;
+        width: 195px;
+        margin-bottom: 2px;
+    }
+    #textchat-input label {
+        font-family: 'Ubuntu', sans-serif;
+        padding-top: 6px;
+    }
+    #textchat-input #speakingas {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+
+    /* ====================================== FLOATING TOOLBAR ======================================= */
+    div#floatingtoolbar {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    div#floatingtoolbar li {
+        color: #333;
+    }
+
+    div#floatingtoolbar li:hover,
+    #floatingtoolbar li.activebutton,
+    #zoompanel ul li.zoomClickBack,
+    #measure li.activerulermode {
+        background-color: #1A7BC5;
+        color: #fff;
+    }
+
+    div#floatingtoolbar div.submenu ul {
+        width: 245px;
+    }
+
+    div#floatingtoolbar li#diceroller div.quickdice-label,
+    div#floatingtoolbar li#diceroller div.quickdice-toggle,
+    div#floatingtoolbar li#diceroller div.quickdice-button {
+        flex: none;
+        flex-grow: 0;
+    }
+
+    div#floatingtoolbar li#diceroller div.quickdice-label,
+    div#floatingtoolbar li#diceroller div[data-toggle-type="gmroll"] {
+        width: 80px;
+    }
+
+    div#floatingtoolbar li#diceroller div[data-toggle-type="inline"],
+    div#floatingtoolbar li#diceroller div[data-group="exploding"],
+    div#floatingtoolbar li#diceroller div.quickdice-button {
+        width: 40px;
+    }
+}

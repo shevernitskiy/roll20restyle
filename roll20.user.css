@@ -3,7 +3,7 @@
 @namespace    github.com/shevernitskiy/roll20restyle
 @homepageURL  https://github.com/shevernitskiy/roll20restyle
 @updateURL    https://raw.githubusercontent.com/shevernitskiy/roll20restyle/master/roll20.user.css
-@version      1.0.0
+@version      1.0.1
 @author       shevernitskiy
 @license      MIT
 ==/UserStyle== */
@@ -657,7 +657,7 @@
 
     /* ====================================== FLOATING TOOLBAR ======================================= */
     div#floatingtoolbar {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Kurale', sans-serif;
         font-weight: 600;
     }
 

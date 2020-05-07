@@ -3,7 +3,7 @@
 @namespace    github.com/shevernitskiy/roll20restyle
 @homepageURL  https://github.com/shevernitskiy/roll20restyle
 @updateURL    https://raw.githubusercontent.com/shevernitskiy/roll20restyle/master/roll20.user.css
-@version      1.1.1
+@version      1.1.2
 @author       shevernitskiy
 @license      MIT
 ==/UserStyle== */
@@ -2051,12 +2051,39 @@
     
     div#sidebarcontrol span.fonticon-menu::before {
         display: block;
-        font-size: 0;        
+        font-size: 0;
     }
     div#sidebarcontrol {
         background: url('https://icon-icons.com/icons2/1132/PNG/32/1486348529-back-backwards-repeat-arrows-arrow_80455.png') no-repeat center;
         opacity: 1;
         border: 0px;
+    }
+    
+    #rightsidebar .ui-tabs-panel::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #f7ecdd;
+        border-radius: 10px;
+    }
+
+    #rightsidebar .ui-tabs-panel::-webkit-scrollbar
+    {
+        width: 7px;
+        background-color: #F5F5F5;
+    }
+
+    #rightsidebar .ui-tabs-panel::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-color: #F90;	
+        background-image: -webkit-linear-gradient(45deg,
+                                                  rgba(255, 255, 255, .2) 25%,
+                                                  transparent 25%,
+                                                  transparent 50%,
+                                                  rgba(255, 255, 255, .2) 50%,
+                                                  rgba(255, 255, 255, .2) 75%,
+                                                  transparent 75%,
+                                                  transparent)
     }
     
     /* ====================================== ZOOM & SCROLLBAR ======================================= */    

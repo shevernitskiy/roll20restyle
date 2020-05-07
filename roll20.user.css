@@ -3,7 +3,7 @@
 @namespace    github.com/shevernitskiy/roll20restyle
 @homepageURL  https://github.com/shevernitskiy/roll20restyle
 @updateURL    https://raw.githubusercontent.com/shevernitskiy/roll20restyle/master/roll20.user.css
-@version      1.1.3
+@version      1.1.4
 @author       shevernitskiy
 @license      MIT
 ==/UserStyle== */
@@ -2041,12 +2041,13 @@
     }
     #textchat-input label {
         font-family: 'Ubuntu', sans-serif;
-        padding-top: 6px;
+        margin-top: 10px;
     }
     #textchat-input #speakingas {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 14px;
+        margin-top: 5px;
     }
     
     div#sidebarcontrol span.fonticon-menu::before {
@@ -2057,8 +2058,8 @@
         background: url('https://icon-icons.com/icons2/1132/PNG/32/1486348529-back-backwards-repeat-arrows-arrow_80455.png') no-repeat center;
         opacity: 1;
         border: 0px;
+        filter: brightness(0.5) !important;
     }
-    
     #rightsidebar .ui-tabs-panel::-webkit-scrollbar-track
     {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -2086,6 +2087,31 @@
                                                   transparent)
     }
     
+    div#textchat-input button.btn {
+        background-image: url('https://bnetcmsus-a.akamaihd.net/cms/template_resource/YG5XN3AWU0DZ1555957771296.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 0px;
+        background-color: #fff0;
+        padding: 10px 15px 12px 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fbda03;
+        text-shadow: 0 1px 1px rgba(22, 22, 22, .82);   
+    }
+    
+    div#textchat-input button.btn {
+        width: 60px;
+        margin-bottom: 5px;
+    }
+    
+    div#textchat-input button.btn:hover {
+        transition: none;
+        background-position: 0px;
+        filter: brightness(1.5);
+        background-color: #fff0;
+        color: #fbda03;
+    }
     /* ====================================== MAIN AREA ======================================= */    
     div#editor-wrapper {
         overflow: auto;
@@ -2103,9 +2129,7 @@
         font-weight: 800;
         color: #222;
     }
- 
-
-
+    
     /* ====================================== FLOATING TOOLBAR ======================================= */
     div#floatingtoolbar {
         font-family: 'Montserrat', sans-serif;
